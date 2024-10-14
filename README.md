@@ -1,5 +1,5 @@
 # **System**
-## **Project Overview:
+## Project Overview:
 
 A robust backend system tailored for efficient user management, encompassing critical functionalities such as account creation, secure authentication, email verification through OTP, and password recovery. Designed to enhance platforms to champion tech education across Africa, this API prioritizes security, scalability, and adaptability, making it an ideal solution for modern educational platforms.
 
