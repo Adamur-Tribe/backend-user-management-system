@@ -1,18 +1,22 @@
+// Define the generator for the Prisma Client
 generator client {
-  provider = "prisma-client-js"
+  provider = "prisma-client-js" // Specify the client to be generated for JavaScript
 }
 
+// Define the data source for the database
 datasource db {
-  provider = "postgresql" // Or SQLite for development
-  url      = env("DATABASE_URL")
+  provider = "postgresql" // Specify the database provider (PostgreSQL or SQLite for development)
+  url      = env("DATABASE_URL") // Use the DATABASE_URL environment variable for database connection
 }
 
+// Define the User model representing the user table in the database
 model User {
-  id          Int      @id @default(autoincrement())
-  email       String   @unique
-  password    String
-  isVerified  Boolean  @default(false)
-  otp         String?
-  otpExpires  DateTime?
-  createdAt   DateTime @default(now())
+  id          Int      @id @default(autoincrement()) // Unique identifier for each user, auto-incremented
+  email       String   @unique // Email of the user, must be unique
+  password    String   // Password for user authentication
+  isVerified  Boolean  @default(false) // Indicates if the user's email is verified (default: false)
+  otp         String?  // One-time password for user verification, optional
+  otpExpires  DateTime? // Expiration date and time for the OTP, optional
+  createdAt   DateTime @default(now()) // Timestamp for when the user was created (default: current date and time)
 }
+
