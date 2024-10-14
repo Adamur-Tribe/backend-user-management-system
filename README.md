@@ -1,7 +1,7 @@
 # **Adamur Backend User System**
 ## **Project Overview:
 
-This project is a robust backend system tailored for efficient user management, encompassing critical functionalities such as account creation, secure authentication, email verification through OTP, and password recovery. Designed with the goal of enhancing platforms like **Adamur**, which champions tech education across Africa, this API prioritizes security, scalability, and adaptability, making it an ideal solution for modern educational platforms.
+A robust backend system tailored for efficient user management, encompassing critical functionalities such as account creation, secure authentication, email verification through OTP, and password recovery. Designed to enhance platforms to champion tech education across Africa, this API prioritizes security, scalability, and adaptability, making it an ideal solution for modern educational platforms.
 
 ### **Key Features:**
 - **Streamlined User Onboarding**: Facilitates easy account registration for new users.
