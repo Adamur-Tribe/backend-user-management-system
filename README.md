@@ -5,27 +5,24 @@ This project is a backend service designed to handle essential user management f
 ---
 
 ## **Overview of Features**
+### **Account Creation Process**
+- **Effortless Onboarding**: Users can initiate their journey by signing up with a valid email address and a strong password of their choice.
+- **Enhanced Data Protection**: All passwords are encrypted using industry-leading algorithms before being securely stored, safeguarding user credentials.
+- **Stringent Validation**: The platform conducts thorough checks to ensure the email format is correct and that passwords meet complexity requirements, fortifying the registration process.
+- **Activation Code Delivery**: Upon completing the signup, users receive a unique one-time password (OTP) via email, which is crucial for activating their account.
 
-- **User Registration**
-  - Users can sign up by providing their email and a secure password.
-  - Passwords undergo strong encryption before being saved.
-  - Validates email format and password complexity for added security.
-  - Sends a unique one-time verification code (OTP) to the user’s email for account activation.
+### **Authentication Mechanism**
+- **Secure Login**: Users log in by providing their registered email and password, ensuring secure access to their accounts.
+- **Session Management**: After successful authentication, a **JWT token** is issued, establishing a secure session that protects user data during interactions.
+- **Email Confirmation Gate**: Users who have not yet verified their accounts are gently reminded to complete the email verification process before gaining full access.
 
-- **Login and Authentication**
-  - Authenticates users with a secure email and password combination.
-  - Issues a **JWT token** to maintain session security upon successful login.
-  - Ensures that unverified users cannot log in until their email is verified.
+### **Account Verification**
+- **Rapid OTP Dispatch**: As soon as users register, an OTP is promptly sent to their email, verifying ownership and ensuring a smooth transition to activation.
+- **Verification Completion**: To finalize their account setup, users must enter the OTP received in their email, confirming their access rights.
 
-- **Email Verification**
-  - After signing up, the user receives an OTP through email.
-  - The OTP is required to complete the account verification process, ensuring the user has access to the provided email.
-
-- **Password Recovery**
-  - Users can request a password reset link if they forget their password.
-  - A secure token is generated and sent via email, allowing users to set a new password.
-
----
+### **Password Reset Functionality**
+- **Convenient Recovery Options**: Users can easily request a password reset link if they forget their current password, ensuring a user-friendly experience.
+- **Unique Reset Token**: A secure token is generated and sent to the user’s email, enabling them to safely create a new password and regain access to their account.
 
 ## **Tech Stack and Tools**
 
