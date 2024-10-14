@@ -1,4 +1,4 @@
-# **Adamur Backend User System**
+# **System**
 ## **Project Overview:
 
 A robust backend system tailored for efficient user management, encompassing critical functionalities such as account creation, secure authentication, email verification through OTP, and password recovery. Designed to enhance platforms to champion tech education across Africa, this API prioritizes security, scalability, and adaptability, making it an ideal solution for modern educational platforms.
@@ -22,7 +22,7 @@ Built with a flexible architecture, this service can be integrated into various 
 
 ### **Logging In Securely**
 - **Quick Access**: Users log in with their registered email and password, facilitating a straightforward authentication process.
-- **Session Security**: Upon a successful login, a **JWT token** is created to maintain a secure session and protect user interactions.
+- **Session Security**: Upon successful login, a **JWT token** is created to maintain a secure session and protect user interactions.
 - **Email Verification Step**: Users who haven’t completed the email verification process are prompted to do so, ensuring that only verified users gain full access.
 
 ### **Verification for Trust**
@@ -49,7 +49,7 @@ Built with a flexible architecture, this service can be integrated into various 
 1. **Clone the Repository**:
    ```bash
    git clone <repository-url>
-   cd adamur-backend-system
+   cd demur-backend-system
    ```
 
 2. **Install Dependencies**:
@@ -74,10 +74,3 @@ Built with a flexible architecture, this service can be integrated into various 
    ```bash
    npm run dev
    ```
-
----
-
-## **Possible Extensions**
-
-- **Role-Based Access Control (RBAC)**: Implement roles (like Admin or User) with different permission levels for secure access management.
-- **Web3 Integration**: Future support for blockchain-based identity verification to bring decentralized login options to the platform.
